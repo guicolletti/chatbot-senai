@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot SENAI - Mário Henrique Simonsen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <div class="logo">SENAI</div>
+                <div class="header-text">
+                    <h1>SENAI Mário Henrique Simonsen</h1>
+                    <p>Assistente Virtual para Cursos Técnicos</p>
+                </div>
+            </div>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> (21) 1234-5678</p>
+                <p><i class="fas fa-map-marker-alt"></i> Av. Industrial, 350 - Jacarepaguá</p>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="sidebar">
+                <h2>Cursos Técnicos</h2>
+                <div class="course-list">
+                    <div class="course-item">
+                        <h3>Técnico em Informática</h3>
+                        <p>Formação em desenvolvimento de sistemas, redes e manutenção de computadores.</p>
+                        <div class="duration"><i class="far fa-clock"></i> 1200 horas</div>
+                    </div>
+                    <div class="course-item">
+                        <h3>Técnico em Mecatrônica</h3>
+                        <p>Automação industrial integrando mecânica, eletrônica e informática.</p>
+                        <div class="duration"><i class="far fa-clock"></i> 1600 horas</div>
+                    </div>
+                    <div class="course-item">
+                        <h3>Técnico em Administração</h3>
+                        <p>Gestão de empresas, recursos humanos e processos administrativos.</p>
+                        <div class="duration"><i class="far fa-clock"></i> 800 horas</div>
+                    </div>
+                    <div class="course-item">
+                        <h3>Técnico em Eletrotécnica</h3>
+                        <p>Instalação e manutenção de sistemas elétricos industriais.</p>
+                        <div class="duration"><i class="far fa-clock"></i> 1200 horas</div>
+                    </div>
+                    <div class="course-item">
+                        <h3>Técnico em Logística</h3>
+                        <p>Gestão de cadeia de suprimentos e operações logísticas.</p>
+                        <div class="duration"><i class="far fa-clock"></i> 1000 horas</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h2><i class="fas fa-comments"></i> Assistente Virtual SENAI</h2>
+                </div>
+
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message bot-message">
+                        Olá! Sou o assistente virtual do SENAI Mário Henrique Simonsen. Posso te ajudar com informações sobre nossos cursos técnicos, processos de matrícula e requisitos. Como posso te ajudar?
+                    </div>
+
+                    <div class="bot-typing" id="typing-indicator">
+                        <div class="typing-indicator">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="suggestions">
+                    <div class="suggestion" onclick="sendSuggestion('Quais cursos técnicos oferecem?')">Quais cursos técnicos oferecem?</div>
+                    <div class="suggestion" onclick="sendSuggestion('Qual o valor da mensalidade?')">Qual o valor da mensalidade?</div>
+                    <div class="suggestion" onclick="sendSuggestion('Preciso de documentos para matrícula?')">Preciso de documentos para matrícula?</div>
+                </div>
+
+                <div class="input-container">
+                    <input type="text" id="user-input" placeholder="Digite sua mensagem..." autocomplete="off">
+                    <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+                </div>
+
+                <div class="bot-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>SENAI Mário Henrique Simonsen &copy; 2023 - Formação Profissional de Excelência</p>
+            <p>Av. Industrial, 350 - Jacarepaguá, Rio de Janeiro - RJ | Telefone: (21) 1234-5678</p>
+        </div>
+    </div>
+
+    <script>
+        // Elementos do DOM
+        const chatMessages = document.getElementById('chat-messages');
+        const userInput = document.getElementById('user-input');
+        const sendButton = document.getElementById('send-button');
+        const typingIndicator = document.getElementById('typing-indicator');
+
+        // Função para adicionar mensagem no chat
+        function addMessage(text, isUser) {
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('message');
+            messageDiv.classList.add(isUser ? 'user-message' : 'bot-message');
+            messageDiv.textContent = text;
+
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        // Função para enviar mensagem para o backend
+        async function sendMessageToBackend(message) {
+            try {
+                const response = await fetch('/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ message: message })
+                });
+
+                const data = await response.json();
+                return data.response;
+            } catch (error) {
+                console.error('Erro:', error);
+                return "Desculpe, ocorreu um erro. Tente novamente.";
+            }
+        }
+
+        // Função para enviar mensagem
+        async function sendMessage() {
+            const message = userInput.value.trim();
+
+            if (message) {
+                addMessage(message, true);
+                userInput.value = '';
+
+                typingIndicator.style.display = 'block';
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+
+                const botResponse = await sendMessageToBackend(message);
+
+                typingIndicator.style.display = 'none';
+                addMessage(botResponse, false);
+            }
+        }
+
+        // Função para enviar sugestão
+        async function sendSuggestion(suggestion) {
+            addMessage(suggestion, true);
+
+            typingIndicator.style.display = 'block';
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+
+            const botResponse = await sendMessageToBackend(suggestion);
+
+            typingIndicator.style.display = 'none';
+            addMessage(botResponse, false);
+        }
+
+        // Event Listeners
+        sendButton.addEventListener('click', sendMessage);
+        userInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        // Focar no input ao carregar
+        window.onload = () => {
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+            userInput.focus();
+        };
+    </script>
+</body>
+</html>
