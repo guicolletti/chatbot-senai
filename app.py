@@ -35,5 +35,7 @@ def chat():
         print(f"Erro: {e}")
         return jsonify({'response': "Desculpe, estou com dificuldades. Por favor, tente novamente."})
 
-    if __name__ == '__main__':
-        app.run(debug=True)
+
+
+if __name__ == '__main__':
+    app.run(debug=True)

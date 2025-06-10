@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="232da8ac-ae65-4286-8b1f-fece8cc14815" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/chatbot-senai.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/chatbot-senai.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+    </list>
+    <list id="bdcf5a43-d20f-4aa9-ba62-1093f305aa1c" name="Changes by Aluno" comment="">
+      <change beforePath="$PROJECT_DIR$/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/static/styles.css">
+      <ranges>
+        <range start1="16" end1="16" start2="16" end2="47" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
+        <range start1="988" end1="989" start2="1019" end2="1019" changelist="bdcf5a43-d20f-4aa9-ba62-1093f305aa1c" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/templates/index.html">
+      <ranges>
+        <range start1="10" end1="55" start2="10" end2="55" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
+        <range start1="56" end1="60" start2="56" end2="60" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
+        <range start1="61" end1="65" start2="61" end2="66" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
+        <range start1="66" end1="74" start2="67" end2="75" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
+        <range start1="75" end1="80" start2="76" end2="87" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
+        <range start1="81" end1="87" start2="88" end2="95" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
+        <range start1="88" end1="97" start2="96" end2="158" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
+        <range start1="98" end1="103" start2="159" end2="164" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
+        <range start1="104" end1="107" start2="165" end2="168" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
+        <range start1="108" end1="117" start2="169" end2="178" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
+        <range start1="118" end1="125" start2="179" end2="186" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
+        <range start1="126" end1="128" start2="187" end2="189" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
+        <range start1="129" end1="132" start2="190" end2="193" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
+        <range start1="133" end1="135" start2="194" end2="196" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
+        <range start1="136" end1="137" start2="197" end2="198" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
+        <range start1="138" end1="142" start2="199" end2="205" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
+        <range start1="143" end1="145" start2="206" end2="208" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
+        <range start1="146" end1="148" start2="209" end2="211" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
+        <range start1="149" end1="150" start2="212" end2="213" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
+        <range start1="151" end1="154" start2="214" end2="217" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
+        <range start1="155" end1="161" start2="218" end2="224" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
+        <range start1="162" end1="167" start2="225" end2="230" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
+        <range start1="169" end1="170" start2="232" end2="232" changelist="bdcf5a43-d20f-4aa9-ba62-1093f305aa1c" />
+      </ranges>
+    </file>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2yJjxATyyLIORn3XPiJSatqyTfQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.app.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feature/audio"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="chatbot-senai" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.app" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-d7ad00fb9fc3-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23726.102" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="232da8ac-ae65-4286-8b1f-fece8cc14815" name="Changes" comment="" />
+      <created>1749559813728</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749559813728</updated>
+    </task>
+    <servers />
+  </component>
+</project>
