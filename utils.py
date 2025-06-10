@@ -33,7 +33,7 @@ def split_text_into_chunks(text, chunk_size=200):
 
 
 def process_all_courses(pdfs_dir):
-    """Cria um índice único com todo o conteúdo"""
+    """Cria um índice único com tod0 o conteúdo"""
     all_chunks = []
     all_metadata = []  # Armazena metadados sobre a origem de cada chunk
 
@@ -65,7 +65,7 @@ def process_all_courses(pdfs_dir):
 def ask_question(question, global_index):
     """Busca chunks relevantes e pergunta ao Gemini"""
     try:
-        # Busca chunks relevantes em todo o conteúdo
+        # Busca chunks relevantes em tod0 o conteúdo
         question_embedding = embedder.encode([question])
         distances, indices = global_index["index"].search(question_embedding, 10)  # Top 10 chunks
 
