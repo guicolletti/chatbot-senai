@@ -15,6 +15,37 @@ body {
     overflow: hidden;
 }
 
+#voice-button {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    background: #e0e0e0;
+    color: #cc0000;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#voice-button:hover {
+    background: #d0d0d0;
+}
+
+#voice-button.listening {
+    background: #cc0000;
+    color: white;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(204, 0, 0, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(204, 0, 0, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(204, 0, 0, 0); }
+}
+
 /* ===== CONTAINER PRINCIPAL (AGORA OCUPA A TELA INTEIRA) ===== */
 .container {
     width: 100%;
