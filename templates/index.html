@@ -215,15 +215,27 @@ function speakText(text) {
 
 
     async function sendSuggestion(suggestion) {
+        // Adiciona a sugestão como mensagem do usuário
         addMessage(suggestion, true);
 
+        // Mostra o indicador de digitação
         typingIndicator.style.display = 'block';
         chatMessages.scrollTop = chatMessages.scrollHeight;
 
-        const botResponse = await sendMessageToBackend(suggestion);
+        try {
+            // Envia para o backend e obtém resposta
+            const botResponse = await sendMessageToBackend(suggestion);
 
-        typingIndicator.style.display = 'none';
-        addMessage(botResponse, false);
+            // Esconde o indicador e mostra resposta
+            typingIndicator.style.display = 'none';
+            addMessage(botResponse, false);
+
+            // FALA A RESPOSTA (adição crucial)
+            speakText(botResponse);
+        } catch (error) {
+            console.error('Erro ao processar sugestão:', error);
+            addMessage("Erro ao processar sua solicitação. Tente novamente.", false);
+        }
     }
 
     sendButton.addEventListener('click', sendMessage);

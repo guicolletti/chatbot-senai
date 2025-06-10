@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="232da8ac-ae65-4286-8b1f-fece8cc14815" name="Changes" comment="finalização audio-falado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="bdcf5a43-d20f-4aa9-ba62-1093f305aa1c" name="Changes by Aluno" comment="">
+=======
+    <list default="true" id="232da8ac-ae65-4286-8b1f-fece8cc14815" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> release/1.0.1
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
+    <list id="bdcf5a43-d20f-4aa9-ba62-1093f305aa1c" name="Changes by Aluno" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +36,11 @@
   "keyToString": {
     "Python.app.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+<<<<<<< HEAD
     "git-widget-placeholder": "main"
+=======
+    "git-widget-placeholder": "feature/qol__js"
+>>>>>>> release/1.0.1
   }
 }]]></component>
   <component name="RunManager">
