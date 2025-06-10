@@ -90,6 +90,7 @@
                 <button id="voice-button" title="Falar"><i class="fas fa-microphone"></i></button>
                 <input type="text" id="user-input" placeholder="Digite ou fale sua mensagem..." autocomplete="off">
                 <button id="send-button" title="Enviar"><i class="fas fa-paper-plane"></i></button>
+                 <button id="mute-button" title="Mutar/Desmutar"><i class="fas fa-volume-up"></i></button>
             </div>
         </div>
     </div>
@@ -148,11 +149,20 @@ voiceButton.addEventListener('click', () => {
 });
 
 // Fala as respostas do bot
+const muteButton = document.getElementById('mute-button');
+let isMuted = false;
+
+muteButton.addEventListener('click', () => {
+    isMuted = !isMuted;
+    muteButton.innerHTML = isMuted ? '<i class="fas fa-volume-mute"></i>' : '<i class="fas fa-volume-up"></i>';
+});
 function speakText(text) {
+    if (isMuted) return; // Não fala se estiver mudo
+
     if ('speechSynthesis' in window) {
         const utterance = new SpeechSynthesisUtterance(text);
         utterance.lang = 'pt-BR';
-        utterance.rate = 0.9; // Velocidade reduzida para melhor compreensão
+        utterance.rate = 0.9;
         window.speechSynthesis.speak(utterance);
     }
 }

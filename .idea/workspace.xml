@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="232da8ac-ae65-4286-8b1f-fece8cc14815" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/chatbot-senai.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/chatbot-senai.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+    <list default="true" id="232da8ac-ae65-4286-8b1f-fece8cc14815" name="Changes" comment="finalização audio-falado">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="bdcf5a43-d20f-4aa9-ba62-1093f305aa1c" name="Changes by Aluno" comment="">
-      <change beforePath="$PROJECT_DIR$/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,41 +17,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/static/styles.css">
-      <ranges>
-        <range start1="16" end1="16" start2="16" end2="47" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
-        <range start1="988" end1="989" start2="1019" end2="1019" changelist="bdcf5a43-d20f-4aa9-ba62-1093f305aa1c" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/templates/index.html">
-      <ranges>
-        <range start1="10" end1="55" start2="10" end2="55" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
-        <range start1="56" end1="60" start2="56" end2="60" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
-        <range start1="61" end1="65" start2="61" end2="66" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
-        <range start1="66" end1="74" start2="67" end2="75" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
-        <range start1="75" end1="80" start2="76" end2="87" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
-        <range start1="81" end1="87" start2="88" end2="95" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
-        <range start1="88" end1="97" start2="96" end2="158" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
-        <range start1="98" end1="103" start2="159" end2="164" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
-        <range start1="104" end1="107" start2="165" end2="168" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
-        <range start1="108" end1="117" start2="169" end2="178" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
-        <range start1="118" end1="125" start2="179" end2="186" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
-        <range start1="126" end1="128" start2="187" end2="189" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
-        <range start1="129" end1="132" start2="190" end2="193" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
-        <range start1="133" end1="135" start2="194" end2="196" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
-        <range start1="136" end1="137" start2="197" end2="198" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
-        <range start1="138" end1="142" start2="199" end2="205" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
-        <range start1="143" end1="145" start2="206" end2="208" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
-        <range start1="146" end1="148" start2="209" end2="211" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
-        <range start1="149" end1="150" start2="212" end2="213" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
-        <range start1="151" end1="154" start2="214" end2="217" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
-        <range start1="155" end1="161" start2="218" end2="224" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
-        <range start1="162" end1="167" start2="225" end2="230" changelist="232da8ac-ae65-4286-8b1f-fece8cc14815" />
-        <range start1="169" end1="170" start2="232" end2="232" changelist="bdcf5a43-d20f-4aa9-ba62-1093f305aa1c" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -72,7 +30,7 @@
   "keyToString": {
     "Python.app.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/audio"
+    "git-widget-placeholder": "main"
   }
 }]]></component>
   <component name="RunManager">
@@ -120,6 +78,19 @@
       <option name="presentableId" value="Default" />
       <updated>1749559813728</updated>
     </task>
+    <task id="LOCAL-00001" summary="finalização audio-falado">
+      <option name="closed" value="true" />
+      <created>1749564141421</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1749564141421</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finalização audio-falado" />
+    <option name="LAST_COMMIT_MESSAGE" value="finalização audio-falado" />
   </component>
 </project>
