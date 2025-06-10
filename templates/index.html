@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot SENAI - Mário Henrique Simonsen</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <div class="container">
@@ -18,8 +18,8 @@
                 </div>
             </div>
             <div class="contact-info">
-                <p><i class="fas fa-phone"></i> (21) 1234-5678</p>
-                <p><i class="fas fa-map-marker-alt"></i> Av. Industrial, 350 - Jacarepaguá</p>
+                <p><i class="fas fa-phone"></i> (19) 3412-3500</p>
+                <p><i class="fas fa-map-marker-alt"></i> Av. Mal. Castelo Branco, 1000 - Piracicaba</p>
             </div>
         </header>
 
@@ -86,25 +86,23 @@
                 </div>
 
                 <div class="bot-avatar">
-                    <i class="fas fa-robot"></i>
+                    <i class=""></i>
                 </div>
             </div>
         </div>
 
         <div class="footer">
-            <p>SENAI Mário Henrique Simonsen &copy; 2023 - Formação Profissional de Excelência</p>
-            <p>Av. Industrial, 350 - Jacarepaguá, Rio de Janeiro - RJ | Telefone: (21) 1234-5678</p>
+            <p>SENAI Mário Henrique Simonsen &copy; 2025 - Formação Técnica de Excelência</p>
+            <p>Av. Mal. Castelo Branco, 1000 - Piracicaba - SP | Telefone: (19) 3412-3500</p>
         </div>
     </div>
 
     <script>
-        // Elementos do DOM
         const chatMessages = document.getElementById('chat-messages');
         const userInput = document.getElementById('user-input');
         const sendButton = document.getElementById('send-button');
         const typingIndicator = document.getElementById('typing-indicator');
 
-        // Função para adicionar mensagem no chat
         function addMessage(text, isUser) {
             const messageDiv = document.createElement('div');
             messageDiv.classList.add('message');
@@ -115,7 +113,6 @@
             chatMessages.scrollTop = chatMessages.scrollHeight;
         }
 
-        // Função para enviar mensagem para o backend
         async function sendMessageToBackend(message) {
             try {
                 const response = await fetch('/chat', {
@@ -134,7 +131,6 @@
             }
         }
 
-        // Função para enviar mensagem
         async function sendMessage() {
             const message = userInput.value.trim();
 
@@ -152,7 +148,6 @@
             }
         }
 
-        // Função para enviar sugestão
         async function sendSuggestion(suggestion) {
             addMessage(suggestion, true);
 
@@ -165,7 +160,6 @@
             addMessage(botResponse, false);
         }
 
-        // Event Listeners
         sendButton.addEventListener('click', sendMessage);
         userInput.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') {
@@ -173,7 +167,6 @@
             }
         });
 
-        // Focar no input ao carregar
         window.onload = () => {
             chatMessages.scrollTop = chatMessages.scrollHeight;
             userInput.focus();
